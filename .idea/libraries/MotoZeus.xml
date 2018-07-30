@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MotoZeus">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/MotoZeus.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

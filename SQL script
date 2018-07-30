@@ -1,0 +1,31 @@
+\*Creating user with priviliges\*
+CREATE USER 'test'@'localhost' IDENTIFIED BY 'test';
+
+GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';
+
+
+\*SQL script for creating tables\*
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `model` varchar(45) DEFAULT NULL,
+  `year` varchar(45) DEFAULT NULL,
+  `price` varchar(45) DEFAULT NULL,
+  `user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `postcode` varchar(10) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+\*Creating user with priviliges\*
+CREATE USER 'test'@'localhost' IDENTIFIED BY 'test';
+
+GRANT ALL PRIVILEGES ON * . * TO 'test'@'localhost';

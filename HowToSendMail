@@ -1,0 +1,6 @@
+How to enable sending orders through mail:
+You need to setup in CreatePDF class an email (gmail one) from which you are going to send emails. 
+Setup your username and password for it.
+On that email you have to allow less secure applications an access.
+https://www.google.com/settings/security/lesssecureapps
+Then in CreatePDF you should also update your designated place where order will be created.
